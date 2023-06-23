@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/heading"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:boxStrokeColor="#83EA0B"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_margin="15dp"
+        app:helperTextTextColor="#F11919"
+        app:helperTextEnabled="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="199dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_1"
+            android:textStyle="bold"
+            android:hint="Name"
+            android:id="@+id/etName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#83EA0B"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        android:layout_margin="15dp"
+        app:helperTextTextColor="@color/black"
+        app:helperTextEnabled="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="199dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etMail"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/gradient_1"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:boxStrokeColor="#83EA0B"
+        app:startIconDrawable="@drawable/baseline_grid_3x3_24"
+        android:layout_margin="15dp"
+        app:helperTextTextColor="@color/black"
+        app:helperTextEnabled="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="199dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/uniqueId"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/gradient_1"
+            android:hint="Unique Id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        android:layout_margin="15dp"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="#83EA0B"
+        tools:layout_editor_absoluteX="1dp"
+        app:helperTextTextColor="@color/black"
+        app:helperTextEnabled="true"
+        tools:layout_editor_absoluteY="199dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPass"
+            android:background="@drawable/gradient_1"
+            android:textStyle="bold"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnSignUp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_1"/>
+
+
+
+</LinearLayout>

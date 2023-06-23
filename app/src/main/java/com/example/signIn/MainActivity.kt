@@ -1,12 +1,11 @@
-package com.example.signup
+package com.example.signIn
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.signup.R
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -54,8 +53,6 @@ class MainActivity : AppCompatActivity() {
                 }.addOnFailureListener {
                     Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
                 }
-                intent = Intent(applicationContext, Constructor_Options::class.java)
-                startActivity(intent)
             }
         }
 
